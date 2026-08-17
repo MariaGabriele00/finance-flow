@@ -6,41 +6,41 @@ O projeto foi desenvolvido com foco em organização de código, separação de 
 
 ## Telas
 
-### Dashboard Desktop
+### Dashboard
 
-<p align="center">
-  <img src="assets/image-desktop.png" width="850">
-</p>
+<div align="center">
+  <img src="./assets/image-desktop.png" width="850">
+</div>
 
-### Fluxo Financeiro Desktop
+### Fluxo Financeiro
 
-<p align="center">
-  <img src="assets/image-desktop1.png" width="850">
-</p>
+<div align="center">
+  <img src="./assets/image-desktop1.png" width="850">
+</div>
 
-### Transações Desktop
+### Transações
 
-<p align="center">
-  <img src="assets/image-desktop3.png" width="850">
-</p>
+<div align="center">
+  <img src="./assets/image-desktop3.png" width="850">
+</div>
 
 ### Dashboard Mobile
 
-<p align="center">
-  <img src="assets/image.png" width="280">
-</p>
+<div align="center">
+  <img src="./assets/image.png" width="280">
+</div>
 
-### Nova Transação Mobile
+### Nova Transação
 
-<p align="center">
-  <img src="assets/image-1.png" width="280">
-</p>
+<div align="center">
+  <img src="./assets/image-1.png" width="280">
+</div>
 
 ### Transações Mobile
 
-<p align="center">
-  <img src="assets/image-3.png" width="280">
-</p>
+<div align="center">
+  <img src="./assets/image-3.png" width="280">
+</div>
 
 ## Funcionalidades
 
