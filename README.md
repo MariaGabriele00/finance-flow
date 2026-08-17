@@ -83,3 +83,115 @@ lib/
 │
 └── main.dart
 ```
+
+### Fluxo da aplicação
+
+```text
+ Presentation
+      |
+      v
+    BLoC
+      |
+      v
+  Use Cases
+      |
+      v
+  Repository
+      |
+      v
+ Data Source
+```
+
+- **Core:** Responsável pelos recursos compartilhados da aplicação, como tema e configurações utilizadas por diferentes partes do sistema.
+- **Data:** Responsável pela implementação dos repositórios e pelo acesso aos dados.
+- **Domain:** Contém as regras de negócio da aplicação, entidades, contratos dos repositórios e casos de uso.
+- **Presentation:** Responsável pela interface do usuário, gerenciamento de estado e componentes visuais.
+
+## Tecnologias
+
+- Flutter
+- Dart
+- Clean Architecture & Clean Code
+- BLoC (Gerenciamento de Estado)
+- fl_chart (Gráficos)
+- Material 3
+- Intl (Formatação de moeda e datas)
+- Equatable
+
+## Interface e Experiência
+
+- **Gráficos:** O dashboard utiliza gráficos animados para facilitar a visualização da movimentação financeira, tornando a apresentação dos dados mais dinâmica e proporcionando uma experiência fluida. A visualização permite acompanhar entradas e saídas ao longo dos meses.
+- **Design Responsivo:** A interface foi desenvolvida considerando diferentes tamanhos de tela (Smartphones, Tablets, Monitores, Notebooks e Desktops). A navegação e a distribuição dos componentes são adaptadas de acordo com o espaço disponível.
+
+## Plataformas Suportadas
+
+O projeto foi estruturado para funcionar de forma nativa e adaptada nas seguintes plataformas:
+
+- Android & iOS
+- Windows, macOS & Linux
+- Web
+
+## Como Executar
+
+Clone o repositório:
+
+```bash
+git clone [https://github.com/MariaGabriele00/finance-flow.git](https://github.com/MariaGabriele00/finance-flow.git)
+```
+
+Acesse a pasta do projeto:
+
+```bash
+cd finance-flow
+```
+
+Instale as dependências:
+
+```bash
+flutter pub get
+```
+
+Execute o projeto de acordo com a plataforma desejada:
+
+```bash
+# Execução padrão
+flutter run
+
+# Execução no Windows
+flutter run -d windows
+
+# Execução na Web
+flutter run -d chrome
+
+# Execução no Android
+flutter run -d android
+
+# Execução no iOS
+flutter run -d ios
+```
+
+## Dados e Gerenciamento
+
+- **Persistência de dados:** O datasource atual utiliza armazenamento local em memória. A camada de dados está isolada através da abstração de repositórios, permitindo substituir posteriormente a implementação por uma solução persistente (SQLite, Isar, Firebase, API REST) sem alterar as regras de negócio da aplicação.
+- **Estrutura de dados:** O domínio utiliza entidades próprias para representar as informações financeiras. A comunicação entre as camadas ocorre através de contratos, mantendo as regras de negócio desacopladas.
+- **Gerenciamento de estado:** Realizado utilizando BLoC. A camada de apresentação comunica as intenções do usuário ao BLoC, que executa os casos de uso necessários e atualiza o estado da interface.
+
+## Próximos Passos
+
+- [ ] Persistência local de dados
+- [ ] Autenticação de usuários e Sincronização em nuvem
+- [ ] Múltiplas contas bancárias e Cartões de crédito
+- [ ] Orçamentos e Metas financeiras
+- [ ] Relatórios financeiros e Filtros avançados
+- [ ] Busca de transações
+- [ ] Notificações
+- [ ] Testes unitários e Testes de BLoC
+- [ ] Integração com API REST
+
+## Objetivo do Projeto
+
+O Finance Flow foi desenvolvido como um projeto de estudo e portfólio, com o objetivo de aplicar conceitos avançados de desenvolvimento de aplicações Flutter utilizando uma arquitetura organizada, componentes reutilizáveis, gerenciamento reativo de estado e uma interface altamente responsiva.
+
+## Licença
+
+Este projeto está disponível para fins de estudo e portfólio.
